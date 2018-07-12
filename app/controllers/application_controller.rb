@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
     
     username = params[:username]
     
-    if username == nil 
+    if username == ""
         redirect "/failure"
     end
 
