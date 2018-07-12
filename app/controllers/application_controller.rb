@@ -44,7 +44,7 @@ class ApplicationController < Sinatra::Base
     end
 
 		if params[:username] != "" || params[:password] != ""
-        redirect "/login"
+        redirect "/account"
     end
     
     user = User.find_by(:username => params[:username])
