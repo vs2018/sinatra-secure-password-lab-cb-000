@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
     puts params["Username:"]
     puts params[:password]
 
-		if params[:username] != "" || params[:password] != ""
+		if params["Username:"] != "" || params["Password:"] != ""
         redirect "/login"
     else
         redirect "/failure"
