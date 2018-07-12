@@ -26,8 +26,8 @@ class ApplicationController < Sinatra::Base
         redirect "/login"
     end
     
-    usern = params[:username]
-    user = User.find_by(username: usern)
+    username = params[:username]
+  
     
     if user.class != User
         redirect "/failure"
