@@ -50,7 +50,7 @@ class ApplicationController < Sinatra::Base
   
     
 
-		if user && user.authenticate(params[:password])
+		if user && user.authenticate(params[:password_digest])
 		  
         redirect "/account"
     end
